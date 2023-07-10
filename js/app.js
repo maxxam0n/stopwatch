@@ -100,7 +100,6 @@ btns.forEach(button => {
 		button.addEventListener('click', function () {
 			if (isStart) {
 				let time = [0, 0, 0];
-				this.hidden = false;
 				circleCount++;
 
 				if (circleCount > 1) {
@@ -153,10 +152,6 @@ btns.forEach(button => {
 					button.classList.add('stopwatch__start');
 					button.classList.remove('stopwatch__stop');
 					button.textContent = 'Старт';
-				}
-
-				if (button.closest('#circle')) {
-					button.hidden = true;
 				}
 			});
 		});
